@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body {
+    background-color: white;
+}
+
+html {
+    width: 100vh;
+    height: 100vh;
+}
+
+.main-layout-grid {
+    display: grid;
+    grid-template-columns: 200px auto 200px;
+    grid-template-areas: "left center right";
+    gap: 10px;
+}
+
+/*.left-wrapper {
+    max-width: 350px;
+    margin: 0 auto;
+}*/
+
+.aside-left {
+    display: grid;
+    grid-area: left;
+    padding-top: 10px;
+    padding-left: 35px;
+    
+}
+
+.nav-grid {
+    display: grid;
+    /*grid-template-columns: repeat(3 1fr);*/
+    grid-template-columns: auto 1fr;
+    border: 2px; 
+    /*place-items: center;*/
+    
+    gap: 10px;
+}
+
+.CTA-button {
+    place-items: center;
+    display: grid;
+    grid-auto-columns: auto 1fr;
+
+    border: 2px solid black;
+    border-radius: 1%;
+    background-color: rgb(206, 227, 104);
+    
+}
+
+.button-image {
+    width: 50px;
+    align-items: left;
+}
+
+.button-image, .button-paragraph {
+    display: inline;
+}
+
+.Squirrel-icon, .House-icon, .Hastag-icon, .Notification-icon, .Message-icon,
+    .Bookmarks-icon {
+        align-items: center;
+        display: flex;
+    }
+/*.nav-grid {
+    display: grid;
+    
+    grid-template-areas: 
+    "navrow1"
+    "navrow2"
+    "navrow3"
+    "navrow4"
+    "navrow5"
+    "navrow6"
+    "navrow7"
+    "navrow8"
+    "navrow9"
+    "navrow10";
+    
+    gap: 1px;
+    border: 5px solid black;
+    margin: 2px;
+    
+}
+
+.CTA-button-icon {
+    grid-area: navrow1;
+    grid-template-rows: auto;
+    
+}
+
+.CTA-button-icon > img {
+    max-height: 15px;
+    max-width: auto;
+}
+
+.CTA-button-home {
+    display: inline-block;
+    grid-area: navrow2;
+    place-items: center stretch;
+    grid-template-rows: auto;
+    
+}
+
+.CTA-button-home > img {
+    max-height: 50%;
+    max-width: auto;
+    /* display: inline-block; 
+}
+
+.CTA-button-explore {
+    grid-area: navrow3;
+    display: inline;
+}
+
+.CTA-button-explore > img {
+    max-height: 50px;
+    max-width: auto;
+}
+
+.CTA-button-notifications {
+    grid-area: navrow4;
+    display: inline;
+}
+
+.CTA-button-notifications > img {
+    max-height: 50px;
+    max-width: auto;
+}
+
+.CTA-button-messages {
+    grid-area: navrow5;
+    display: inline;
+}
+
+.CTA-button-messages > img {
+    max-height: 50px;
+    max-width: auto;
+}
+
+.CTA-button-bookmarks {
+    grid-area: navrow6;
+    display: inline;
+}
+
+.CTA-button-bookmarks > img {
+    max-height: 50px;
+    max-width: auto;
+}
+
+.CTA-button-lists {
+    grid-area: navrow7;
+    display: inline;
+}
+
+.CTA-button-lists > img {
+    max-height: 50px;
+    max-width: auto;
+}
+
+.CTA-button-profile {
+    grid-area: navrow8;
+    display: inline;
+}
+
+.CTA-button-profile > img{
+    max-height: 50px;
+    max-width: auto;
+}
+
+.CTA-button-more {
+    grid-area: navrow9;
+    display: inline;
+}
+
+.CTA-button-more {
+    max-height: 50px;
+    max-width: auto;
+}
+
+.aside-left-button-tweet {
+    grid-area: navrow10;
+    
+}
+
+*/
+.main-layout {
+   grid-area: center;
+   
+    gap: 5px;
+    border: 2px spolid blue;
+    margin: 2px;
+}
+
+.aside-right {
+   grid-area: right;
+    gap: 5px;
+    border: 2px solid black;
+}
